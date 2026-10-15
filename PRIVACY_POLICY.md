@@ -74,4 +74,4 @@ We may update this policy for Marketplace or legal requirements. The “Last upd
 
 reza@paresh.top  
 Najafzadeh Reza  
-Kölcsey út 26., 2721 Pilis, Magyarország
+2721 Pilis, Magyarország
