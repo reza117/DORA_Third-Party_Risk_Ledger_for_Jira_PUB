@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support & Docs — DORA Third-Party Risk Ledger for Jira</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.55; color: #172B4D; }
+    h1,h2,h3 { line-height: 1.25; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #DFE1E6; padding: 8px; text-align: left; }
+    th { background: #F4F5F7; }
+    code { background: #F4F5F7; padding: 0 4px; border-radius: 3px; }
+    a { color: #0052CC; }
+  </style>
+</head>
+<body>
+<h1>Support &amp; Docs — DORA Third-Party Risk Ledger for Jira</h1>
+<p><strong>Last updated:</strong> 2026-10-15<br />
+<strong>Support email:</strong> reza@paresh.top</p>
+<p>Quick guide for Jira admins and compliance users. For legal pages see <a href="./">Privacy Policy</a> and <a href="./terms.html">Terms of Use</a>.</p>
+<h2>1. What this app does</h2>
+<ul>
+<li>Maintain an ICT third-party <strong>vendor ledger</strong> in Jira Cloud (Forge Storage)</li>
+<li>Validate <strong>LEI</strong> format (Mod 97-10)</li>
+<li>Map <strong>subcontracting</strong> chains</li>
+<li><strong>Link</strong> one Jira issue ↔ one vendor (issue panel is view/link only)</li>
+<li><strong>CSV</strong> export → Excel → re-import (upsert by LEI)</li>
+<li><strong>RoI-oriented</strong> Excel export for compliance roles</li>
+</ul>
+<p>RoI export is oriented toward EU 2024/2956 / EBA DPM-style fields — <strong>not</strong> claimed as ESA byte-identical official template output. Validate with your compliance team before filing.</p>
+<h2>2. Install</h2>
+<ol>
+<li>Install from Atlassian Marketplace (or your Forge distribution) on a <strong>Jira Cloud</strong> site.</li>
+<li>Open <strong>Apps → DORA Risk Ledger</strong> (global page).</li>
+<li>When prompted, <strong>Allow access</strong> so the app can read groups / work items as scoped.</li>
+</ol>
+<h2>3. Create the compliance group (required for RoI)</h2>
+<p>The app <strong>cannot</strong> create Jira groups. An admin must:</p>
+<ol>
+<li>Create a <strong>global</strong> group named exactly: <code>dora-compliance-officers</code></li>
+<li>Add users who may edit <strong>Reporting entity</strong> and run <strong>RoI export</strong></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Who</th>
+<th>Can do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jira admin</td>
+<td><code>jira-administrators</code></td>
+<td>Full config, RoI, reporting entity</td>
+</tr>
+<tr>
+<td>Compliance</td>
+<td><code>dora-compliance-officers</code></td>
+<td>RoI export, reporting entity edit</td>
+</tr>
+<tr>
+<td>Editor</td>
+<td>Users with Edit Issues (typical)</td>
+<td>Vendor CRUD, CSV, link/unlink</td>
+</tr>
+<tr>
+<td>Others</td>
+<td>—</td>
+<td>Read-only / limited</td>
+</tr>
+</tbody>
+</table>
+<h2>4. Vendors (global page)</h2>
+<ol>
+<li>Open <strong>DORA Risk Ledger</strong>.</li>
+<li><strong>Add vendor</strong> — fill required fields; LEI must pass checksum.</li>
+<li>Use search / column sort / pagination on the list.</li>
+<li><strong>Edit</strong> / <strong>Delete</strong> from the row actions (delete may require edit rights).</li>
+</ol>
+<p><strong>Tip:</strong> Contract expiry shows visual chips (expired / soon). Scheduled email alerts are not included yet.</p>
+<h2>5. Subcontracting</h2>
+<ol>
+<li>Edit a <strong>parent</strong> vendor.</li>
+<li>Attach direct subcontractors from the vendor picker.</li>
+<li>Save — the chain appears on the vendor view / RoI export where applicable.</li>
+</ol>
+<h2>6. CSV bulk import / export</h2>
+<ol>
+<li>Global page → <strong>Vendor Bulk import / export</strong>.</li>
+<li><strong>Download vendor list (.csv)</strong> or <strong>Download CSV template</strong>.</li>
+<li>Edit in Excel → save as CSV.</li>
+<li>Drop/upload the file. Progress shows while import runs in chunks (Forge 25s limit).</li>
+<li>Re-importing an existing LEI <strong>updates</strong> that vendor.</li>
+</ol>
+<p>Large files: expect tens of seconds (e.g. ~50s for ~500 new rows on a typical site).</p>
+<h2>7. Reporting entity &amp; RoI export</h2>
+<ol>
+<li>Fill <strong>Reporting entity</strong> (admin or <code>dora-compliance-officers</code>).</li>
+<li>Click <strong>Export RoI (.xlsx)</strong> — multi-sheet workbook downloads in the browser.</li>
+<li>Open the file and review sheets before any external use.</li>
+</ol>
+<p>Load-tested to ~1000 vendors with RoI export typically under 10 seconds.</p>
+<h2>8. Issue panel (ICT Vendor)</h2>
+<ol>
+<li>Open a Jira issue → <strong>ICT Vendor</strong> panel.</li>
+<li>Search/select a vendor → <strong>Save</strong> to link (writes a Jira comment).</li>
+<li><strong>Unlink</strong> asks for confirmation.</li>
+<li>Edits to vendor fields are done on the <strong>global page</strong>, not in the panel.</li>
+</ol>
+<p>One issue ↔ one vendor (1:1).</p>
+<h2>9. Languages</h2>
+<p>UI: <strong>English</strong> and <strong>German</strong> (toggle in the app).</p>
+<h2>10. Get help</h2>
+<ul>
+<li>Email: <strong>reza@paresh.top</strong></li>
+<li>Include: site URL, approx. time (UTC), what you clicked, and any error text / request id</li>
+</ul>
+<h2>11. Legal</h2>
+<ul>
+<li><a href="./">Privacy Policy</a></li>
+<li><a href="./terms.html">Terms of Use</a></li>
+</ul>
+</body>
+</html>
