@@ -34,7 +34,7 @@ You must not use the App to violate law, Atlassian Acceptable Use policies, or t
 ## 4. Data and privacy
 
 - App vendor/ledger data is stored in **your** Atlassian Cloud environment (Forge Storage / Jira), not on Publisher-operated application servers.
-- Processing of personal data is described in our [Privacy Policy](https://reza117.github.io/DORA_Third-Party_Risk_Ledger_for_Jira_PUB/).
+- Processing of personal data is described in our [Privacy Policy](https://reza117.github.io/DORA_Third-Party_Risk_Ledger_for_Jira_PUB/privacy/).
 - Atlassian provides the underlying platform under Atlassian’s terms and DPA.
 
 ## 5. No professional / regulatory warranty

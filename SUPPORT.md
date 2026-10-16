@@ -3,7 +3,7 @@
 **Last updated:** 2026-10-15  
 **Support email:** reza@paresh.top
 
-Quick guide for Jira admins and compliance users. For legal pages see [Privacy Policy](./) and [Terms of Use](./terms.html).
+Quick guide for Jira admins and compliance users. For legal pages see [Privacy Policy](https://reza117.github.io/DORA_Third-Party_Risk_Ledger_for_Jira_PUB/privacy/) and [Terms of Use](./terms.html).
 
 ## 1. What this app does
 
@@ -89,5 +89,5 @@ UI: **English** and **German** (toggle in the app).
 
 ## 11. Legal
 
-- [Privacy Policy](./)
+- [Privacy Policy](https://reza117.github.io/DORA_Third-Party_Risk_Ledger_for_Jira_PUB/privacy/)
 - [Terms of Use](./terms.html)

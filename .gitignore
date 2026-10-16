@@ -1,0 +1,5 @@
+
+# BEGIN dogit-private
+.dogit/
+*.7z.hash
+# END dogit-private
