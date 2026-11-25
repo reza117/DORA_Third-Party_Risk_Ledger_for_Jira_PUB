@@ -4,7 +4,7 @@
 
 These Terms of Use (“Terms”) govern use of the Atlassian Forge app **DORA Third-Party Risk Ledger for Jira** (“the App”), published by **Najafzadeh Reza** (egyéni vállalkozó, Hungary) (“Publisher”, “we”).
 
-Contact: **reza@paresh.top**
+Contact: **support@paresh.top**
 
 By installing or using the App, you agree to these Terms on behalf of the organisation that owns the Atlassian Cloud site (“Customer”, “you”).
 
@@ -83,5 +83,5 @@ These Terms are governed by the laws of **Hungary**, without regard to conflict-
 ## 12. Contact
 
 Najafzadeh Reza  
-reza@paresh.top  
+support@paresh.top  
 2721 Pilis, Magyarország

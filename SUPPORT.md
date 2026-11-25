@@ -1,7 +1,7 @@
 # Support & Docs — DORA Third-Party Risk Ledger for Jira
 
 **Last updated:** 2026-10-15  
-**Support email:** reza@paresh.top
+**Support email:** support@paresh.top
 
 Quick guide for Jira admins and compliance users. For legal pages see [Privacy Policy](https://reza117.github.io/DORA_Third-Party_Risk_Ledger_for_Jira_PUB/privacy/) and [Terms of Use](./terms.html).
 
@@ -84,7 +84,7 @@ UI: **English** and **German** (toggle in the app).
 
 ## 10. Get help
 
-- Email: **reza@paresh.top**
+- Email: **support@paresh.top**
 - Include: site URL, approx. time (UTC), what you clicked, and any error text / request id
 
 ## 11. Legal

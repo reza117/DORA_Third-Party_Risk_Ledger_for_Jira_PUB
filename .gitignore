@@ -1,5 +1,33 @@
 
 # BEGIN dogit-private
 .dogit/
+.dogit.sh
 *.7z.hash
 # END dogit-private
+
+# Secrets and credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.kdbx
+credentials.json
+credentials*.json
+*secret*
+*secrets*
+*.token
+id_rsa
+id_ed25519
+id_ecdsa
+
+# Local and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.claude/
+.cursor/
+*.swp
+*~

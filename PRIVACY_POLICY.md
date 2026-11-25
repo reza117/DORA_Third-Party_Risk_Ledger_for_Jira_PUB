@@ -8,7 +8,7 @@
 This policy covers the Atlassian Forge app **DORA Third-Party Risk Ledger for Jira** (“the App”).
 
 **Controller / publisher:** Najafzadeh Reza (egyéni vállalkozó, Hungary)  
-**Contact:** reza@paresh.top
+**Contact:** support@paresh.top
 
 ## 2. What the App does
 
@@ -72,6 +72,6 @@ We may update this policy for Marketplace or legal requirements. The “Last upd
 
 ## 12. Contact
 
-reza@paresh.top  
+support@paresh.top  
 Najafzadeh Reza  
 2721 Pilis, Magyarország
