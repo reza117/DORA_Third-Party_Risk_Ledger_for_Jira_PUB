@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Security Policy — DORA Third-Party Risk Ledger for Jira</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.55; color: #172B4D; }
+    h1,h2,h3 { line-height: 1.25; }
+    a { color: #0052CC; }
+  </style>
+</head>
+<body>
+<h1>Security Policy — DORA Third-Party Risk Ledger for Jira</h1>
+<p><strong>Last updated:</strong> 2026-11-25<br />
+<strong>Security contact:</strong> support@paresh.top</p>
+<p>This policy describes the security controls, vulnerability management, and incident response for the Atlassian Forge app <strong>DORA Third-Party Risk Ledger for Jira</strong> (“the App”), published by <strong>Najafzadeh Reza</strong> (egyéni vállalkozó, Hungary).</p>
+<p>It is separate from the <a href="./privacy/">Privacy Policy</a>.</p>
+<h2>1. Security controls</h2>
+<ul>
+<li>The App runs as an Atlassian Forge app on the customer’s Jira Cloud site. App code executes on Atlassian’s platform.</li>
+<li>Vendor records, reporting-entity details, issue links, and audit events are stored in Forge Storage and Jira for that site. The publisher does not run a separate server that receives this data.</li>
+<li>Access inside the customer site follows Jira permissions. Register of Information export and reporting-entity edits are limited to Jira administrators and members of the <code>dora-compliance-officers</code> group. The customer’s Jira admin creates and maintains that group.</li>
+<li>The App does not ask users for Atlassian passwords. Installation and API access use Atlassian’s Forge authorization.</li>
+<li>Traffic to Jira Cloud uses HTTPS provided by Atlassian.</li>
+<li>Fixes and updates are delivered as new Marketplace versions of the App. Customers should keep the installed version current.</li>
+</ul>
+<h2>2. Vulnerability management</h2>
+<ul>
+<li>Report a suspected vulnerability to <strong>support@paresh.top</strong> with the subject line <strong>Security</strong>.</li>
+<li>Include the App version, a description of the issue, and steps to reproduce. Do not send vendor records, exports, or other customer data.</li>
+<li>We acknowledge the report, assess severity, develop a fix, and ship it through the Atlassian Marketplace.</li>
+<li>Please give us a chance to release a fix before any public disclosure.</li>
+</ul>
+<h2>3. Incident response</h2>
+<ul>
+<li>If we learn of a vulnerability or incident that could affect customer sites, we investigate, ship a fix or disable the affected behaviour, and email the customer who reported it.</li>
+<li>Where Atlassian Marketplace rules require it, we also notify Atlassian.</li>
+<li>Customer Jira admins remain responsible for who can use the site, who is in <code>dora-compliance-officers</code>, and for uninstalling the App. Uninstall removes Forge Storage data according to Atlassian’s retention behaviour.</li>
+</ul>
+<h2>4. Contact</h2>
+<p>support@paresh.top<br />
+Najafzadeh Reza<br />
+2721 Pilis, Magyarország</p>
+<p>See also the <a href="./support.html">support guide</a> and <a href="./terms.html">Terms of Use</a>.</p>
+</body>
+</html>
